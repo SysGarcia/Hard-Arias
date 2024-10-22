@@ -76,15 +76,16 @@ Once everything is set up, you can run the bot with:
 python bot.py
 ```
 
->Make sure the bot’s TOKEN, channel, and user IDs are correctly configured in the code. The bot will run continuously, checking every 58 minutes to see if it’s the right time to assign roles.
+
 
 >[!TIP]
 >Important Notes:
 
-    Ensure your bot has the necessary permissions to create roles and assign them.
-    Do not share your TOKEN publicly, as it grants full access to your bot.
+>Make sure the bot’s TOKEN, channel, and user IDs are correctly configured in the code. The bot will run continuously, checking every 58 minutes to see if it’s the right time to assign roles.
+>Ensure your bot has the necessary permissions to create roles and assign them.
+>Do not share your TOKEN publicly, as it grants full access to your bot.
 
-Troubleshooting:
-
-    Bot not responding: Make sure your bot is online, the token is correct, and the bot is added to your Discord server with proper permissions.
-    Roles not being created: Check the bot’s permissions to manage roles. The bot’s role in the server should be higher than the roles it’s trying to assign.
+> [!WARNING]
+>Troubleshooting:
+>Bot not responding: Make sure your bot is online, the token is correct, and the bot is added to your Discord server with proper permissions.
+>Roles not being created: Check the bot’s permissions to manage roles. The bot’s role in the server should be higher than the roles it’s trying to assign.
