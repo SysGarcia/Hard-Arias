@@ -76,7 +76,7 @@ Customization:
 >python bot.py
 
 >Make sure the bot’s TOKEN, channel, and user IDs are correctly configured in the code. The bot will run continuously, checking every 58 minutes to see if it’s the right time to assign roles.
->
+
 >[!TIP]
 >Important Notes:
 
