@@ -44,6 +44,7 @@ Enable Developer Mode in Discord’s settings to easily copy these IDs.
     - **on_ready**: When the bot starts, it announces its activation in the designated channel.
     - **Scheduled Task (verificar_hora)**: Checks every 58 minutes to see if it’s time to assign roles.
 <br>
+
 ### Role Assignment Process
 
 1. **Time Check**: Runs between 16:00 and 18:00.
@@ -51,6 +52,7 @@ Enable Developer Mode in Discord’s settings to easily copy these IDs.
 3. **Role Assignment**: Assigns the selected role to the specified user.
 4. **Role Management**: Removes the assigned role from the JSON file to avoid duplication.
 <br>
+
 ### JSON File Structure (`palabras.json`)
 
 Create a JSON file to store role names in the following format:
