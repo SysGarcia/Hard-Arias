@@ -83,7 +83,7 @@ Create a JSON file to store role names in the following format:
 >Ensure your bot has the necessary permissions to create roles and assign them.
 >Do not share your TOKEN publicly, as it grants full access to your bot.
 
-
+<br>
 
 > [!WARNING]
 >Troubleshooting:
