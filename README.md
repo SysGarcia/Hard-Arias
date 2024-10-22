@@ -70,8 +70,11 @@ Customization:
     Role List: Add or remove role names from palabras.json to suit your needs.
 >[!NOTE]
 >Running the Bot:
->Once everything is set up, you can run the bot with:
-    >python bot.py
+Once everything is set up, you can run the bot with:
+>
+```py
+python bot.py
+```
 
 >Make sure the bot’s TOKEN, channel, and user IDs are correctly configured in the code. The bot will run continuously, checking every 58 minutes to see if it’s the right time to assign roles.
 
