@@ -59,24 +59,22 @@ Create a JSON file to store role names in the following format:
   "arias_roles": ["Role1", "Role2", "Role3"]
 }
 ```
-Customization:
+## Customization Options
 
-    Time Range: You can change the time range for role assignment in this line:
+- **Change Time Range**: You can change the time range for role assignment by modifying the following line in your code:
 
-    python
-
+    ```python
     if "16:00" <= hora_actual < "18:00":
+    ```
 
-    Role List: Add or remove role names from palabras.json to suit your needs.
+- **Update Role List**: Add or remove role names from `palabras.json` to suit your needs.
+
 >[!NOTE]
->Running the Bot:
-Once everything is set up, you can run the bot with:
+> **Running the Bot**: Once everything is set up, you can run the bot with:
 >
-```py
-python bot.py
-```
-
-
+> ```bash
+> python bot.py
+> ```
 
 >[!TIP]
 >Important Notes:
