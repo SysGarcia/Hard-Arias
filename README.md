@@ -68,7 +68,7 @@ Create a JSON file to store role names in the following format:
     ```
 
 - **Update Role List**: Add or remove role names from `palabras.json` to suit your needs.
-
+<br><br>
 >[!NOTE]
 > **Running the Bot**: Once everything is set up, you can run the bot with:
 >
@@ -82,8 +82,6 @@ Create a JSON file to store role names in the following format:
 >Make sure the bot’s TOKEN, channel, and user IDs are correctly configured in the code. The bot will run continuously, checking every 58 minutes to see if it’s the right time to assign roles.
 >Ensure your bot has the necessary permissions to create roles and assign them.
 >Do not share your TOKEN publicly, as it grants full access to your bot.
-
-<br>
 
 > [!WARNING]
 >Troubleshooting:
