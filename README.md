@@ -73,10 +73,12 @@ Customization:
 
 >Once everything is set up, you can run the bot with:
 
-python bot.py
+>python bot.py
 
-Make sure the bot’s TOKEN, channel, and user IDs are correctly configured in the code. The bot will run continuously, checking every 58 minutes to see if it’s the right time to assign roles.
-Important Notes:
+>Make sure the bot’s TOKEN, channel, and user IDs are correctly configured in the code. The bot will run continuously, checking every 58 minutes to see if it’s the right time to assign roles.
+>
+> [!TIP]
+>Important Notes:
 
     Ensure your bot has the necessary permissions to create roles and assign them.
     Do not share your TOKEN publicly, as it grants full access to your bot.
