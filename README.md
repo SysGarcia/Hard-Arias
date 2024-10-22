@@ -1,64 +1,64 @@
-# Role-bot-DC
-This Discord bot automatically assigns random roles to a specific user between certain hours and sends messages to the designated channel when it is active. The bot also loads role names from a JSON file to ensure variety in role assignment.
-Prerequisites
+# Discord Role Assignment Bot
 
-    Python 3.x: Make sure you have Python installed.
-    Discord Developer Portal: You need to create a bot in the Discord Developer Portal. Follow this tutorial (watch up to 9 minutes) to get your bot’s TOKEN.
+This Discord bot automatically assigns random roles to a specific user within a set time frame and sends notifications in the designated channel when it's active. The bot is built with the `discord.py` library and utilizes scheduled tasks to handle time-based actions.
 
-Libraries Used:
+## Prerequisites
 
-    discord.py: This library allows interaction with the Discord API.
-    random: To randomly select roles from the JSON file.
-    json: To load and update role names from a local file.
-    datetime: To check the current time for role assignment.
-    tasks from discord.ext: To run scheduled tasks (e.g., checking the time at regular intervals).
+1. **Python 3.x**: Ensure Python is installed on your system.
+2. **Discord Developer Portal**: Create a bot on the [Discord Developer Portal](https://discord.com/developers/applications). Follow this [tutorial](https://www.youtube.com/watch?v=2k9x0s3awss) (watch up to 9 minutes) to obtain your bot’s `TOKEN`.
 
-Installation
+### Libraries Required
 
-    Install the required libraries by running:
+- **discord.py**: For interacting with the Discord API.
+- **random**: For randomly selecting roles.
+- **json**: For loading and updating roles from a local file.
+- **datetime**: To check the current time.
+- **tasks** from `discord.ext`: To run scheduled tasks.
 
-    bash
+### Installation
 
+1. Install the required libraries:
+
+    ```bash
     pip install discord.py
+    ```
 
-    Set up the bot:
-        Create a bot through the Discord Developer Portal.
-        Add your bot’s TOKEN in the code where it says TOKEN = 'TOKEN'.
-        Replace the values for main_channel_id, guild_id, and usuario_especifico_id with the corresponding IDs from your Discord server.
+2. **Configure the Bot**:
+    - Set your bot’s `TOKEN` in the code: `TOKEN = 'YOUR_BOT_TOKEN'`.
+    - Replace the placeholders for `main_channel_id`, `guild_id`, and `usuario_especifico_id` with the actual IDs from your Discord server.
 
-How to Get IDs:
+### How to Obtain IDs
 
-    main_channel_id: The ID of the channel where the bot will send messages (usually a general channel).
-    guild_id: The ID of the Discord server.
-    usuario_especifico_id: The ID of the user you want to assign random roles to.
+- **`main_channel_id`**: ID of the channel where the bot will send messages (usually the general channel).
+- **`guild_id`**: ID of the Discord server.
+- **`usuario_especifico_id`**: ID of the user who will receive the random roles.
 
-You can enable developer mode in Discord’s settings to easily copy these IDs.
-How the Bot Works:
+Enable Developer Mode in Discord’s settings to easily copy these IDs.
 
-    on_ready Event:
-        When the bot starts, it will print a message in the console and send a message to the specified channel (main_channel_id) announcing that it is active.
-        It also starts a scheduled task that checks the time every 58 minutes.
+## Bot Functionality
 
-    Scheduled Task (verificar_hora):
-        This task runs every 58 minutes to check if the current time is between 16:00 and 18:00.
-        If it is, the bot will:
-            Choose a random role from the palabras.json file.
-            Assign that role to the specific user (usuario_especifico_id).
-            Remove the assigned role from the list in palabras.json to prevent duplicates.
+### Key Features
 
-    Error Handling:
-        If the bot tries to create a role that already exists, it will catch the error and print a message in the console but will keep running.
+- **Event Handling**:
+    - **on_ready**: When the bot starts, it announces its activation in the designated channel.
+    - **Scheduled Task (verificar_hora)**: Checks every 58 minutes to see if it’s time to assign roles.
 
-JSON File (palabras.json):
+### Role Assignment Process
 
-This file should contain a list of role names you want to assign. Here’s an example of how it could look:
+1. **Time Check**: Runs between 16:00 and 18:00.
+2. **Role Selection**: Randomly selects a role from the JSON file.
+3. **Role Assignment**: Assigns the selected role to the specified user.
+4. **Role Management**: Removes the assigned role from the JSON file to avoid duplication.
 
-json
+### JSON File Structure (`palabras.json`)
 
+Create a JSON file to store role names in the following format:
+
+```json
 {
   "arias_roles": ["Role1", "Role2", "Role3"]
 }
-
+```
 Customization:
 
     Time Range: You can change the time range for role assignment in this line:
