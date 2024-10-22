@@ -40,7 +40,9 @@ This Discord bot automatically assigns random roles to a specific user within a 
 Enable Developer Mode in Discord’s settings to easily copy these IDs.
 
 ## Bot Functionality
+
 <br>
+
 ### Key Features
 
 - **Event Handling**:
