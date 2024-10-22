@@ -68,8 +68,8 @@ Customization:
     if "16:00" <= hora_actual < "18:00":
 
     Role List: Add or remove role names from palabras.json to suit your needs.
-[!NOTE]
-Running the Bot:
+>[!NOTE]
+>Running the Bot:
 
 Once everything is set up, you can run the bot with:
 
