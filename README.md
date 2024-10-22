@@ -87,5 +87,6 @@ python bot.py
 
 > [!WARNING]
 >Troubleshooting:
+
 >Bot not responding: Make sure your bot is online, the token is correct, and the bot is added to your Discord server with proper permissions.
 >Roles not being created: Check the bot’s permissions to manage roles. The bot’s role in the server should be higher than the roles it’s trying to assign.
