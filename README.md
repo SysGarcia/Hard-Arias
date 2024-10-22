@@ -1,7 +1,7 @@
 # Discord Role Assignment Bot
 
 This Discord bot automatically assigns random roles to a specific user within a set time frame and sends notifications in the designated channel when it's active. The bot is built with the `discord.py` library and utilizes scheduled tasks to handle time-based actions.
-<br>
+<br><br>
 <kbd>
     <img src="https://github.com/user-attachments/assets/0184a770-ff17-4bad-a56a-12c11cd6c721">
 </kbd>
