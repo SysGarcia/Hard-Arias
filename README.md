@@ -71,9 +71,7 @@ Customization:
 >[!NOTE]
 >Running the Bot:
 
-Once everything is set up, you can run the bot with:
-
-bash
+>Once everything is set up, you can run the bot with:
 
 python bot.py
 
