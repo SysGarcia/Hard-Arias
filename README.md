@@ -85,6 +85,8 @@ python bot.py
 >Ensure your bot has the necessary permissions to create roles and assign them.
 >Do not share your TOKEN publicly, as it grants full access to your bot.
 
+
+
 > [!WARNING]
 >Troubleshooting:
 
