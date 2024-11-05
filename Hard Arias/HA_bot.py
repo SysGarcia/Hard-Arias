@@ -11,9 +11,6 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s',  # Formato del log
 )
 
-#ESTO LO CONSIGUES DE LA PÁGINA WEB DE DESARROLLADORES DE DISCORD UNA VEZ HAYAS SEGUIDO LIGERAMENTE
-#ESTE TUTORIAL VER HASTA LOS 9MIN APROX --> https://www.youtube.com/watch?v=2k9x0s3awss
-
 TOKEN = 'TOKEN'  #TOKEN VERIFICACIÓN --> CAMBIAR ESTO
 #-------------------------------------------------------------------------------------------------+
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
