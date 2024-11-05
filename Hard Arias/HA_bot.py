@@ -17,7 +17,7 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
 main_channel_id = 1195846133788975146 #ID DEL CANAL GENERAL --> CAMBIAR ESTO
 guild_id = 1195846133788975144 #ID DEL SERVIDOR --> CAMBIAR ESTO
-usuario_especifico_id = 839180198313590895 #ID DEL USUARIO AL QUE QUIERES MOLESTAR --> CAMBIAR ESTO (Arias 839180198313590895)
+usuario_especifico_id = 210385272309809152 #ID DEL USUARIO AL QUE QUIERES MOLESTAR --> CAMBIAR ESTO (Arias 839180198313590895)
 
 intentos_de_entrada = 0
 
